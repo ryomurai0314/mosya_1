@@ -1,0 +1,80 @@
+@import "../mixin.scss"; 
+
+//parts.scss
+
+.header_ttl {
+    margin:0 0 0 21px;
+    p {
+        display: flex;
+        align-items: center;
+    }
+    a {
+        display: block;
+    }
+    img {
+        width: 154px;
+        height: 70px;
+    }
+    span {
+        font-weight: 900;
+        font-size: 1.4rem;
+        display: inline-block;
+        margin-left: 20px;
+    }
+    strong {
+        font-size: 1.8rem;
+        font-weight:800;
+    }
+}
+.header_menu {
+    .nav_btn {
+        @include mq(tab) { 
+            display: none;
+        }
+    }
+    ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        height: 70px
+    }
+    li {
+        font-weight: 700;
+        padding: 0 10px;;
+        height: 70px;
+        &:last-child {
+            a {
+                color: #fff;
+                background-color: #2498B3;
+            }
+        }
+        a {
+            display: flex;
+            align-items: center;
+            color: #131d34;
+            height: 100%;
+        }
+    }
+}
+
+article{
+    height: 650px;
+    .main_v_layer1 {
+        background-image:url("../../../../../file/img/bg-hero2.png") ;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:center;
+        z-index:10;
+        height: 650px;
+    }
+    .main_v_layer2 {
+        z-index: 5;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 650px;
+        background-position:center;
+        background-image:url("../../../../../file/img/bg-hero1.png") ;
+    }
+}

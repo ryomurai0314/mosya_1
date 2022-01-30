@@ -1,0 +1,173 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0px;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Noto Sans JP", MyYuGothicM, YuGothic, -apple-system, BlinkMacSystemFont, "Hiragino kaku Gothic ProN", Meiryo, Verdana, arial, helvetica, sans-serif;
+  font-size: 1.6rem;
+}
+
+header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  right: 0;
+  left: 0;
+}
+
+.header_ttl {
+  margin: 0 0 0 21px;
+}
+.header_ttl p {
+  display: flex;
+  align-items: center;
+}
+.header_ttl a {
+  display: block;
+}
+.header_ttl img {
+  width: 154px;
+  height: 70px;
+}
+.header_ttl span {
+  font-weight: 900;
+  font-size: 1.4rem;
+  display: inline-block;
+  margin-left: 20px;
+}
+.header_ttl strong {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+@media screen and (min-width: 768px) {
+  .header_menu .nav_btn {
+    display: none;
+  }
+}
+.header_menu ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  height: 70px;
+}
+.header_menu li {
+  font-weight: 700;
+  padding: 0 10px;
+  height: 70px;
+}
+.header_menu li:last-child a {
+  color: #fff;
+  background-color: #2498B3;
+}
+.header_menu li a {
+  display: flex;
+  align-items: center;
+  color: #131d34;
+  height: 100%;
+}
+
+article {
+  height: 650px;
+}
+article .main_v_layer1 {
+  background-image: url("../../../../../file/img/bg-hero2.png");
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 10;
+  height: 650px;
+}
+article .main_v_layer2 {
+  z-index: 5;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 650px;
+  background-position: center;
+  background-image: url("../../../../../file/img/bg-hero1.png");
+}
