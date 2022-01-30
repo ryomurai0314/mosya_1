@@ -1,0 +1,19 @@
+// base.scss
+
+html {
+    font-size: 10px;
+}
+body {
+    font-family: "Noto Sans JP",MyYuGothicM,YuGothic,-apple-system,BlinkMacSystemFont,"Hiragino kaku Gothic ProN",Meiryo,Verdana,arial,helvetica, sans-serif;
+    font-size: 1.6rem;
+}
+header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    top: 0;
+}

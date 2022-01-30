@@ -1,0 +1,304 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd, ul {
+  margin: 0px;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+ul {
+  padding: 0;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Noto Sans JP", MyYuGothicM, YuGothic, -apple-system, BlinkMacSystemFont, "Hiragino kaku Gothic ProN", Meiryo, Verdana, arial, helvetica, sans-serif;
+  font-size: 1.6rem;
+}
+
+header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  top: 0;
+}
+
+.header_ttl {
+  margin: 0 0 0 21px;
+}
+.header_ttl p {
+  display: flex;
+  align-items: center;
+}
+.header_ttl a {
+  display: block;
+}
+.header_ttl img {
+  width: 154px;
+  height: 70px;
+}
+.header_ttl span {
+  font-weight: 900;
+  font-size: 1.4rem;
+  display: inline-block;
+  margin-left: 20px;
+}
+.header_ttl strong {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 1200px) {
+  .header_menu .nav_btn {
+    display: none;
+  }
+}
+.header_menu ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  height: 70px;
+}
+.header_menu li {
+  font-weight: 700;
+  padding: 0 10px;
+  height: 70px;
+}
+.header_menu li:last-child {
+  padding-right: 0;
+  padding-left: 0;
+}
+.header_menu li:last-child a {
+  color: #fff;
+  background-color: #2498B3;
+  padding: 10px;
+}
+.header_menu li a {
+  display: flex;
+  align-items: center;
+  color: #131d34;
+  height: 100%;
+}
+
+article {
+  background-color: #000;
+}
+article .main_v {
+  background-image: url("/file/img/bg-hero3.png");
+  width: 100%;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 10;
+  height: 650px;
+  margin-top: 70px;
+}
+article .main_v_layer1 {
+  z-index: 5;
+  background-size: auto;
+  background-repeat: no-repeat;
+  height: 650px;
+  background-position: center center;
+  background-image: url("/file/img/bg-hero2.png");
+}
+article .main_v_layer2 {
+  z-index: 15;
+  background-size: auto;
+  background-repeat: no-repeat;
+  height: 650px;
+  background-position: center;
+  background-image: url("/file/img/bg-hero1.png");
+  display: flex;
+  padding-top: 80px;
+  justify-content: center;
+  align-items: baseline;
+}
+article .main_v_body {
+  background-color: #fff;
+  padding: 40px 40px 30px 40px;
+  text-align: center;
+  border-radius: 20px;
+}
+article .main_v_body p {
+  font-weight: bold;
+  margin-top: 20px;
+}
+article .main_v_body img {
+  margin: auto;
+  width: 85%;
+}
+article .main_v_body a {
+  margin-top: 20px;
+  background-color: #3D98B4;
+  display: inline-block;
+  color: #fff;
+  padding: 20px 40px 20px 40px;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.recommend_area {
+  text-align: center;
+  margin-top: -200px;
+}
+.recommend_area li {
+  width: 230px;
+  margin: 0 50px;
+}
+.recommend_area .recommend_icon {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  border: 5px solid #000;
+  text-align: center;
+  font-size: 100px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  background-color: #fff;
+}
+.recommend_area .recommend_ttl {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-top: 0.2em;
+}
+.recommend_area .recommend_text {
+  color: #fff;
+  margin-top: 0.5em;
+  line-height: 1.7;
+  font-weight: 700;
+}
+.recommend_area .recommend_inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.floating__btn {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 1200;
+  width: 160px;
+}
+.floating__btn p {
+  font-weight: 700;
+  font-size: 16px;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.floating__btn p a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #a2d729;
+  color: #000;
+  border-top: solid 1px #c1ff30;
+  border-bottom: solid 3px #9ac33d;
+  position: relative;
+  line-height: 1.4;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.floating__btn p a:before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.floating__btn img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 64px;
+  pointer-events: none;
+}
