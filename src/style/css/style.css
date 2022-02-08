@@ -389,7 +389,7 @@ article {
   background-color: #000;
 }
 article .main_v {
-  background-image: url("/file/img/bg-hero3.png");
+  background-image: url("/img/bg-hero3.png");
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -415,7 +415,7 @@ article .main_v_layer1 {
   background-repeat: no-repeat;
   height: 100%;
   background-position: center center;
-  background-image: url("/file/img/bg-hero2.png");
+  background-image: url("/img/bg-hero2.png");
 }
 @media screen and (max-width: 767px) {
   article .main_v_layer1 {
@@ -429,7 +429,7 @@ article .main_v_layer2 {
   background-repeat: no-repeat;
   height: 100%;
   background-position: center;
-  background-image: url("/file/img/bg-hero1.png");
+  background-image: url("/img/bg-hero1.png");
   display: flex;
   padding-top: 80px;
   justify-content: center;

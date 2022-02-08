@@ -262,7 +262,7 @@ nav{
 article{
     background-color: #000;
     .main_v {
-        background-image:url("/file/img/bg-hero3.png") ;
+        background-image:url("/img/bg-hero3.png") ;
         width: 100%;
         background-size: cover;
         background-repeat: no-repeat;
@@ -284,7 +284,7 @@ article{
         background-repeat: no-repeat;
         height: 100%;
         background-position:center center;
-        background-image:url("/file/img/bg-hero2.png") ;
+        background-image:url("/img/bg-hero2.png") ;
         @include mq(sp) {
             background-size: cover;
             background-position: center -30px;
@@ -296,7 +296,7 @@ article{
         background-repeat: no-repeat;
         height: 100%;
         background-position: center;
-        background-image: url("/file/img/bg-hero1.png");
+        background-image: url("/img/bg-hero1.png");
         display: flex;
         padding-top: 80px;
         justify-content: center;
