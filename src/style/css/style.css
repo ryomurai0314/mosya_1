@@ -286,11 +286,6 @@ header {
 }
 @media screen and (max-width: 1280px) {
   .header_menu li .menu_trigger {
-    padding: 0 10px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .header_menu li .menu_trigger {
     padding: 10px;
   }
 }

@@ -165,9 +165,6 @@
             padding: 0 15px;
             position: relative;
             @include mq(pct) {
-                padding:0 10px;
-            }
-            @include mq(sp) {
                 padding: 10px;
             }
             &:before {
