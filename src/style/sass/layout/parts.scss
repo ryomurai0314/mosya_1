@@ -314,6 +314,8 @@ article{
             padding: 10px 0 13px;
             border-radius: 0;
             width: 100%;
+            transition-property:width;
+            transition-duration:0.5s;
         }
         p {
             font-weight: bold;
@@ -322,6 +324,8 @@ article{
             @include mq(sp) {
                 font-size: 13px;
                 font-size: 1.3rem;
+                transition-property:font-size;
+                transition-duration:0.5s;
             }
         }
         img {
@@ -342,11 +346,14 @@ article{
             border-radius: 4px;
             font-weight: 700;
             border: solid 1px #c3c3c3;
-
+            transition-property:font-size,padding;
+            transition-duration:0.5s;
             @include mq(sp) {
                 margin: 0.5em 0;
                 padding: 12px 18px;
                 font-size: 1.6rem;
+                transition-property:font-size,padding,margin;
+                transition-duration:0.5s;
             }
         }
     }
@@ -448,7 +455,7 @@ article{
             @include mq(sp) {
                 width: 90px;
                 height: 90px;
-             }
+            }
         }
     }
     img {
@@ -463,4 +470,29 @@ article{
          }
     }
 }
-
+.floating__btn > p:hover + img {
+    animation: bound 0.8s linear 0s infinite;
+}
+.floating__btn img:hover {
+    animation: bound 0.8s linear 0s infinite;
+}
+@keyframes bound {
+    0% {
+        transform: scale(1.0, 1.0) translate(0%, 0%);
+    }
+    15% {
+        transform: scale(0.9, 0.9) translate(0%, 5%);
+    }
+    30% {
+        transform: scale(1.3, 0.8) translate(0%, 10%);
+    }
+    50% {
+        transform: scale(0.8, 1.3) translate(0%, -10%);
+    }
+    70% {
+        transform: scale(1.1, 0.9) translate(0%, 5%);
+    }
+    100% {
+        transform: scale(1.0, 1.0) translate(0%, 0%);
+    }
+}
